@@ -1,0 +1,279 @@
+     
+ @media (max-width: 600px) {
+        .row {
+        flex-direction: column;
+        }
+    }
+
+* {
+ box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+}
+
+.header {
+    background-color: #111;
+    color: #00ff00;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid #ff007f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    z-index: 999;
+}
+
+.content {
+    padding-top: 150px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+}
+
+.nav a:hover {
+    background-color: #ff007f;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    margin-left: 100px;
+   }
+   
+.container img {
+     max-width: 150%;
+     max-height:150%;
+     margin-left: 150px;
+   }
+
+.column {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #222;
+    border: 4px solid #ff007f;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.column img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.column iframe {
+    display: block;
+    margin: 0 auto;
+    border: none;
+}
+
+.column h2 {
+    color: #00ff00;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.column p {
+    text-align: center;
+}
+
+.play-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #ff007f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.play-btn:hover {
+    background-color: #ff66b2;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+}
+
+.modal-content {
+    position: relative;
+    margin: 10% auto;
+    width: 110;
+    max-width: 1000px;
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    resize: both; 
+    overflow: hidden;
+    min-width: 100px;
+    min-height: 400px;
+}
+
+.modal-content iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.famous-games {
+    background-color: #111;
+    padding: 50px;
+    margin: 10px;
+    border: 3px solid #ff007f;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.games-table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #111;
+    border: 2px solid #ff007f;
+    color: #fff;
+}
+
+.games-table th, .games-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ff007f;
+}
+
+.games-table th {
+    background-color: #222;
+    color: #0f0;
+    font-size: 1.2em;
+}
+
+.games-table tr:nth-child(even) {
+    background-color: #222;
+}
+
+.games-table tr:hover {
+    background-color: #333;
+}
+
+.games-table img {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    border-top: 5px solid #ff007f;
+}
+
+.feedback-form {
+    background-color: #111;
+    padding: 30px;
+    border: 3px solid #ff007f;
+    border-radius: 15px;
+    width: 400px;
+}
+
+.feedback-form h2 {
+    color: #00ff00;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.feedback-form input[type="text"], .feedback-form input[type="email"], .feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ff007f;
+    background-color: #222;
+    color: #00ff00;
+    font-size: 1em;
+}
+
+.feedback-form input[type="submit"] {
+    background-color: #ff007f;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 100%;
+}
+
+.feedback-form input[type="submit"]:hover {
+    background-color: #ff66a1;
+}
+
+.world  {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
